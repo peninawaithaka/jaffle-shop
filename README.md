@@ -1,19 +1,16 @@
-Welcome to your new dbt project!
 
-### Using the starter project
+## Jaffle-shop Analytics Project
+This project is an implementation of the Modern Data Stack in analytical engineering. Data is loaded from s3 to snowflake and transformed within dbt. 
 
 Try running the following commands:
-- dbt run
-- dbt test
+- dbt debug - to test connection to snowflake account
+- dbt run - runs all the models 
+- dbt test - runs all the tests defined
 
-
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
-
+### Data Stack:
+- AWS s3 - source data
+- snowflake - analytics datawarehouse
+- dbt - data build tool to perform transformations 
 
 ```bash
 git init
@@ -21,5 +18,5 @@ git add .
 git commit -m ""
 git remote add origin gitRemoteUrl
 git remote -v 
-git push origin branchName
+git push branchName
 ```
