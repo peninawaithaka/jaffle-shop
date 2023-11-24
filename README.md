@@ -4,7 +4,7 @@ This project is an implementation of the Modern Data Stack in analytical enginee
 
 Try running the following commands:
 - dbt debug - to test connection to snowflake account
-- dbt run - runs all the models 
+- dbt run - runs all the models and materializes then to tables and views
 - dbt test - runs all the tests defined
 
 ### Data Stack:
