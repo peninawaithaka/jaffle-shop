@@ -6,5 +6,9 @@ sources:
     schema: raw
     tables: 
       - name: customers
+        description: stores one order per customer
+      - name: orders
+        description: stores one record per order. Includes cancelled and deleted orders
+        
     
 
