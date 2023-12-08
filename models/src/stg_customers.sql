@@ -2,6 +2,12 @@
 -- Concat firstname and lastname as customer name 
 
 -- by default the model is materialized as a view.
+-- alias as staging_customers changes the name of the model identifier in the database
+{{
+    config(
+        alias = "staging_customers" 
+    )
+}}
 
 with raw_customers as (
     select

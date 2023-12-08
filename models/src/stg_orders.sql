@@ -1,3 +1,11 @@
+
+{{
+    config(
+        alias = "staging_orders"
+    )
+}}
+
+
 with raw_orders as (
     select
         *
